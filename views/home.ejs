@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <a href="/add">Add Record</a>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+<% data.forEach((item)=>{ %>
+
+<tr>
+    <td><%=item.name%></td>
+    <td><%=item.age%></td>
+</tr>
+
+
+<%})%>
+
+        </table>
+    </body>
+</html>
