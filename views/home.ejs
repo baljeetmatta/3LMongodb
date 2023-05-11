@@ -3,12 +3,15 @@
         <a href="/add">Add Record</a>
         <table>
             <tr>
+                <th></th>
                 <th>Name</th>
                 <th>Age</th>
             </tr>
 <% data.forEach((item)=>{ %>
 
 <tr>
+    <td><a href="/viewData/<%=item._id%>">View</a></td>
+    <td><a href="/updateData/<%=item._id%>">Update</a></td>
     <td><%=item.name%></td>
     <td><%=item.age%></td>
 </tr>

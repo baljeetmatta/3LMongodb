@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <form action="/updateData" method="Post">
+        <table>
+            <tr><td>Name</td><td><input type="text" value="<%=data.name%>" name="name"/></td></tr>
+            <tr><td>Age</td><td><input type="text" value="<%=data.age%>" name="age"/></td></tr>
+        </table>
+        <input type="hidden" name="id" value="<%=data._id%>"/>
+        <input type="submit"/>
+        
+    </form>
+    </body>
+</html>
